@@ -210,23 +210,145 @@
 
 // console.log(age >= 18 ? "Eligible" : "Not Eligible");
 
-let user = {
-  name: "Arun",
-  age: 22,
-  isLoggedIn: true,
-  skills: ["JS", "React"]
-};
-console.log("Name:", user.name);
-console.log("First Skill:", user.skills[0]);
-console.log("Is Adult:", user.age >= 18);
-if (user.isLoggedIn && user.age >= 18) {
-  console.log("Access Allowed");
-}
-console.log(user.isLoggedIn ? "User is logged in" : "User is not logged in");
-user.age++;
-console.log("New Age:", user.age);
-user.skills.push("Node.js");
-console.log("Updated Skills:", user.skills);
+// let user = {
+//   name: "Arun",
+//   age: 22,
+//   isLoggedIn: true,
+//   skills: ["JS", "React"]
+// };
+// console.log("Name:", user.name);
+// console.log("First Skill:", user.skills[0]);
+// console.log("Is Adult:", user.age >= 18);
+// if (user.isLoggedIn && user.age >= 18) {
+//   console.log("Access Allowed");
+// }
+// console.log(user.isLoggedIn ? "User is logged in" : "User is not logged in");
+// user.age++;
+// console.log("New Age:", user.age);
+// user.skills.push("Node.js");
+// console.log("Updated Skills:", user.skills);
+
+// let firstName = "Naveen";
+// let lastName = "Kumar";
+// let fullNamePlus = firstName + " " + lastName;
+// console.log(fullNamePlus);
+
+// let fullNameTemplate = `${firstName} ${lastName}`;
+// console.log(fullNameTemplate);
+
+// console.log(fullNameTemplate.length);
+
+// typeof(5 + "2"); 
+// "5" is a string
+// The + operator string concatenation
+// "5" + 2 → "52"
+
+// typeof(5 + "2")
+// "2" is a string
+// JavaScript converts 5 to "5"
+// 5 + "2" → "52"
+
+// typeof(true + 1)
+// true is converted to the number 1
+// 1 + 1 → 2
+
+// typeof(false + "hello")
+// "hello" is a string
+// + with a string forces concatenation
+// false becomes "false"
+
+// console.log(Number("100"));
+// console.log(Number("10.5"));
+// console.log(Number("abc"));
+// console.log(Number(true));
+// console.log(Number(false));
+// console.log(Number(null));
+// console.log(Number(undefined));
+
+// console.log(Boolean(0));
+// console.log(Boolean(1));
+// console.log(Boolean(""));
+// console.log(Boolean("hello"));
+// console.log(Boolean(null));
+// console.log(Boolean(undefined));
+// console.log(Boolean([]));
+// console.log(Boolean({}));
+
+// let num = 7;
+
+// if (num % 2 === 0) {
+//   console.log(num + " is Even");
+// } else {
+//   console.log(num + " is Odd");
+// }
+
+// let marks = 75;
+
+// if (marks >= 90) {
+//   console.log("Grade A");
+// } else if (marks >= 75 && marks <= 89) {
+//   console.log("Grade B");
+// } else if (marks >= 50 && marks <= 74) {
+//   console.log("Grade C");
+// } else {
+//   console.log("Fail");
+// }
+
+// let dayNumber = 3;
+
+// switch (dayNumber) {
+//   case 1:
+//     console.log("Monday");
+//     break;
+//   case 2:
+//     console.log("Tuesday");
+//     break;
+//   case 3:
+//     console.log("Wednesday");
+//     break;
+//   case 4:
+//     console.log("Thursday");
+//     break;
+//   case 5:
+//     console.log("Friday");
+//     break;
+//   case 6:
+//     console.log("Saturday");
+//     break;
+//   case 7:
+//     console.log("Sunday");
+//     break;
+//   default:
+//     console.log("Invalid day");
+// }
+
+// for (let i = 5; i >= 1; i--) {
+//   console.log(i);
+// }
+
+// let num = 3;
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log(num + " x " + i + " = " + (num * i));
+// }
+
+// let sum = 0;
+
+// for (let i = 1; i <= 10; i++) {
+//   sum += i;
+// }
+
+// console.log("Final Sum:", sum);
+
+// if ("0") {
+//   console.log("true block");
+// } else {
+//   console.log("false block");
+// }
+
+
+
+
 
 
 
