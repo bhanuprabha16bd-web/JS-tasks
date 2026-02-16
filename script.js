@@ -346,6 +346,257 @@
 //   console.log("false block");
 // }
 
+// let word = "developer";
+
+// let count = 0;
+
+// let vowels = "";
+
+// for (let char of word) {
+  
+//   console.log(char);
+
+//   count++;
+
+//   if ("aeiou".includes(char)) {
+//     vowels += char + " ";
+//   }
+// }
+
+// console.log("Total letters:", count);
+// console.log("Vowels:", vowels);
+
+// let skills = ["HTML", "CSS", "JavaScript", "React"];
+
+// let count = 0;
+
+// for (let skill of skills) {
+  
+//   console.log(skill);
+
+//   console.log("I know " + skill);
+
+//   count++;
+// }
+
+// console.log("Total skills:", count);
+
+// let employee = {
+//   name: "Arun",
+//   role: "Tester",
+//   salary: 30000,
+//   experience: "2 years"
+// };
+
+// for (let key in employee) {
+//   console.log(key);
+// }
+
+// for (let key in employee) {
+//   console.log(employee[key]);
+// }
+
+// for (let key in employee) {
+//   console.log(key + " : " + employee[key]);
+// }
+
+// function table(num) {
+//   for (let i = 1; i <= 10; i++) {
+//     console.log(num + " x " + i + " = " + (num * i));
+//   }
+// }
+
+// table(5);
+
+// function square(num) {
+//   return num * num;
+// }
+
+// let result = square(5);
+
+// console.log(result);
+
+// function register(name, department, role = "Developer") {
+//   console.log("Name:", name);
+//   console.log("Department:", department);
+//   console.log("Role:", role);
+//   console.log("---------------");
+// }
+
+// register("Arun", "IT", "Tester"); // Call with role
+
+
+// register("Meena", "HR"); // Call without role (default will be used)
+
+// function checkScope() {
+//   if (true) {
+//     var a = 100;
+//     let b = 200;
+//   }
+//   console.log(a);
+//   console.log(b);
+// }
+
+// console.log(x);
+// var x = 10;
+
+// console.log(y);
+// let y = 20;
+
+// var x;
+// console.log(x); // undefined
+// x = 10;
+
+// function greet(name) {
+//   console.log("Welcome " + name);
+// }
+
+// // Function call
+// greet("Bhanu");
+
+// let add = function (a, b) {
+//   return a + b;
+// };
+
+// let result = add(10, 20);
+// console.log(result);
+
+// let subtract = (a, b) => {
+//   return a - b;
+// };
+
+// let result = subtract(20, 8);
+// console.log(result);
+
+// function calculate(operation, a, b) {
+//   let result = operation(a, b);
+//   console.log(result);
+// }
+
+
+// function add(a, b) {
+//   return a + b;
+// } // Add function
+
+// function subtract(a, b) {
+//   return a - b;
+// }// Subtract function
+
+// // Function calls
+// calculate(add, 10, 5);
+// calculate(subtract, 20, 10);
+// function total(a) {
+//   return function (b) {
+//     return function (c) {
+//       return a + b + c;
+//     };
+//   };
+// }
+
+// Function call
+// console.log(total(5)(10)(15));
+
+// function* reward() {
+//   yield "Level 1 Completed";
+//   yield "Level 2 Completed";
+//   yield "Level 3 Completed";
+//   yield "Team Winner";
+// }
+// const rewards = reward();
+
+// console.log(rewards.next().value);
+// console.log(rewards.next().value);
+// console.log(rewards.next().value);
+// console.log(rewards.next().value);
+// for (let message of reward()) {
+//   console.log(message);
+// }
+
+ //Object – Team Details
+let team = {
+  name: "Alpha Team",
+  members: 5,
+  department: "Development",
+  level: "Intermediate"
+};
+
+
+ //for...in – Print Details 
+console.log("TEAM DETAILS");
+for (let key in team) {
+  console.log(key + " : " + team[key]);
+}
+console.log("----------------");
+
+
+ //Generator – Rewards 
+function* rewardGenerator() {
+  yield "Level 1 Completed";
+  yield "Level 2 Completed";
+  yield "Level 3 Completed";
+  yield "Team Winner";
+}
+console.log("REWARDS");
+for (let reward of rewardGenerator()) {
+  console.log(reward);
+}
+console.log("----------------");
+
+
+//Callback – Score Calculation 
+function calculateScore(operation, a, b) {
+  return operation(a, b);
+}
+
+// Named function
+function addScore(a, b) {
+  return a + b;
+}
+
+// Arrow function
+const subtractScore = (a, b) => a - b;
+
+let totalScore = calculateScore(addScore, 80, 20);
+let penalty = calculateScore(subtractScore, totalScore, 10);
+
+console.log("Total Score:", totalScore);
+console.log("After Penalty:", penalty);
+
+console.log("----------------");
+
+//Default Parameter 
+function registerTeam(name, role = "Developer") {
+  console.log("Team:", name);
+  console.log("Role:", role);
+}
+
+registerTeam("Alpha Team");
+registerTeam("Alpha Team", "Tester");
+
+console.log("----------------");
+
+//Currying for Bonus Calculation 
+function bonus(base) {
+  return function (performance) {
+    return function (extra) {
+      return base + performance + extra;
+    };
+  };
+}
+
+let finalBonus = bonus(1000)(500)(250);
+console.log("Final Bonus:", finalBonus);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
