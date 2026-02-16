@@ -420,7 +420,7 @@
 //   console.log("Name:", name);
 //   console.log("Department:", department);
 //   console.log("Role:", role);
-//   console.log("---------------");
+//   console.log("");
 // }
 
 // register("Arun", "IT", "Tester"); // Call with role
@@ -526,7 +526,7 @@ console.log("TEAM DETAILS");
 for (let key in team) {
   console.log(key + " : " + team[key]);
 }
-console.log("----------------");
+console.log("");
 
 
  //Generator – Rewards 
@@ -540,7 +540,7 @@ console.log("REWARDS");
 for (let reward of rewardGenerator()) {
   console.log(reward);
 }
-console.log("----------------");
+console.log("");
 
 
 //Callback – Score Calculation 
@@ -562,7 +562,7 @@ let penalty = calculateScore(subtractScore, totalScore, 10);
 console.log("Total Score:", totalScore);
 console.log("After Penalty:", penalty);
 
-console.log("----------------");
+console.log("");
 
 //Default Parameter 
 function registerTeam(name, role = "Developer") {
@@ -573,7 +573,7 @@ function registerTeam(name, role = "Developer") {
 registerTeam("Alpha Team");
 registerTeam("Alpha Team", "Tester");
 
-console.log("----------------");
+console.log("");
 
 //Currying for Bonus Calculation 
 function bonus(base) {
